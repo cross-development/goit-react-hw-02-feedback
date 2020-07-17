@@ -1,23 +1,23 @@
 //Core
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 //Styles
-import styles from "./Notification.module.css";
+import styles from './Notification.module.css';
 
 const Notification = ({ message }) => {
-  return (
-    <div className={styles.notification}>
-      <p className={styles.message}>{message}</p>
-    </div>
-  );
+	return (
+		<div className={styles.notification}>
+			<p className={styles.message}>{message}</p>
+		</div>
+	);
 };
 
 Notification.defaultProps = {
-  message: "No feedback information",
+	message: 'No feedback information',
 };
 
 Notification.propTypes = {
-  message: PropTypes.string,
+	message: PropTypes.string,
 };
 
 export default Notification;
