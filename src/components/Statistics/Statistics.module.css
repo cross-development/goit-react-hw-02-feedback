@@ -1,15 +1,12 @@
-.listWrapper {
-  margin: 10px 0 0;
+.list {
+	margin: 10px 0 0;
+	list-style: none;
 }
 
-.feedbackList {
-  list-style: none;
+.listItem:not(:last-child) {
+	margin-bottom: 5px;
 }
 
-.feedbackListItem:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.feedbackListItem:nth-last-child(-n + 2) {
-    font-weight: 700;
+.listItem:nth-last-child(-n + 2) {
+	font-weight: 700;
 }

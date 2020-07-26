@@ -5,8 +5,6 @@ import Section from '../Section/Section';
 import Statistics from '../Statistics/Statistics';
 import Notification from '../Notification/Notification';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-//Style
-import './App.module.css';
 
 //IEnumerable
 const Feedback = {
@@ -23,11 +21,7 @@ export class App extends Component {
 	};
 
 	updateFeedbackCount = type => {
-		this.setState(prevState => {
-			return {
-				[type]: prevState[type] + 1,
-			};
-		});
+		this.setState(prevState => ({ [type]: prevState[type] + 1 }));
 	};
 
 	countTotalFeedback = () => {

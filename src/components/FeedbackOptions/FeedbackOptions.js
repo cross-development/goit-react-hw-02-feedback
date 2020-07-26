@@ -9,13 +9,13 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 
 	return (
 		<div className={styles.buttonWrapper}>
-			<button className={styles.feedbackButton} onClick={() => onLeaveFeedback(GOOD)}>
+			<button className={styles.button} onClick={() => onLeaveFeedback(GOOD)}>
 				Good
 			</button>
-			<button className={styles.feedbackButton} onClick={() => onLeaveFeedback(NEUTRAL)}>
+			<button className={styles.button} onClick={() => onLeaveFeedback(NEUTRAL)}>
 				Neutral
 			</button>
-			<button className={styles.feedbackButton} onClick={() => onLeaveFeedback(BAD)}>
+			<button className={styles.button} onClick={() => onLeaveFeedback(BAD)}>
 				Bad
 			</button>
 		</div>
@@ -23,8 +23,8 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 };
 
 FeedbackOptions.propTypes = {
-	options: PropTypes.objectOf(PropTypes.string.isRequired).isRequired,
 	onLeaveFeedback: PropTypes.func.isRequired,
+	options: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default FeedbackOptions;
