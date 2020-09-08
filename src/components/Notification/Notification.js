@@ -11,7 +11,7 @@ const Notification = ({ message }) => (
 );
 
 Notification.defaultProps = {
-	message: 'No feedback information',
+	message: 'No information',
 };
 
 Notification.propTypes = {
